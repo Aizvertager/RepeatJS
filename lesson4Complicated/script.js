@@ -8,12 +8,13 @@
 
 let stringEditting = function(edit) {
 
+//  Проверяем на число
     if (typeof edit !== 'string') {
         alert('Напишите текст');
     }
-
+//  Убираем пробелы в начале и в конце
     edit.trim();
-
+//  Если больше 30 символов, то добавляем точки
     if (edit.length > 30) {
         edit = edit.substr(0, 30) + '...';
     }
