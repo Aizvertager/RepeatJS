@@ -64,6 +64,7 @@ let appData = {
         }
 
     },
+    // Функция перезаписывает массив addExpenses так, чтобы каждое слово начиналось с заглавной буквы и убирает впереди пробелы если они есть.
     editAddExpenses: function() {
         let arr = [];
         for (let i = 0; i < appData.addExpenses.length; i++) {
